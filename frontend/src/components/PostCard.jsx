@@ -5,7 +5,7 @@ export default function PostCard({ post }) {
   const defaultAvatar = "https://cdn-icons-png.flaticon.com/512/149/149071.png";
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-4 hover:shadow-md transition-all duration-200">
+    <div className="bg-white p-4 mb-4 rounded-lg border border-gray-200 w-full">
       {/* --- Header --- */}
       <div className="flex items-start gap-3">
         <img
@@ -20,7 +20,7 @@ export default function PostCard({ post }) {
           <p className="text-sm text-gray-600">
             {post.authorHeadline || "Software Engineer | Developer"}
           </p>
-          <p className="text-xs text-gray-500 mt-0.5">
+          <p className="text-xs text-gray-500">
             {new Date(post.createdAt).toLocaleString()}
           </p>
         </div>
@@ -28,19 +28,16 @@ export default function PostCard({ post }) {
 
       {/* --- Post Content --- */}
       <div className="mt-3">
-        <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
+        <p className="text-gray-800 text-sm sm:text-base leading-relaxed break-words whitespace-pre-wrap">
           {post.text || "This is a sample post."}
         </p>
 
-        {/* Optional Image */}
         {post.image && (
-          <div className="mt-3">
-            <img
-              src={post.image}
-              alt="Post"
-              className="rounded-lg w-full object-cover border"
-            />
-          </div>
+          <img
+            src={post.image}
+            alt="Post"
+            className="mt-3 rounded-lg w-full object-cover border"
+          />
         )}
       </div>
 
@@ -53,15 +50,15 @@ export default function PostCard({ post }) {
         <span>{post.comments ? `${post.comments} comments` : "0 comments"}</span>
       </div>
 
-      {/* --- Action Buttons --- */}
+      {/* --- Simple Action Buttons --- */}
       <div className="flex justify-between text-gray-600 text-sm mt-2 font-medium">
-        <button className="flex items-center gap-2 hover:bg-gray-100 rounded-md px-3 py-1 transition">
+        <button className="flex items-center gap-2 hover:text-[#0A66C2] transition">
           <FaRegThumbsUp /> Like
         </button>
-        <button className="flex items-center gap-2 hover:bg-gray-100 rounded-md px-3 py-1 transition">
+        <button className="flex items-center gap-2 hover:text-[#0A66C2] transition">
           <FaRegCommentDots /> Comment
         </button>
-        <button className="flex items-center gap-2 hover:bg-gray-100 rounded-md px-3 py-1 transition">
+        <button className="flex items-center gap-2 hover:text-[#0A66C2] transition">
           <BiRepost /> Repost
         </button>
       </div>

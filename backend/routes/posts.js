@@ -9,8 +9,8 @@ router.post('/', auth,async (req, res) => {
   try {
     
     const post = await Post.create({
-      // author: req.user.id,
-      // authorName: req.user.name,
+      author: req.user.id,
+      authorName: req.user.name,
       text,
     });
     res.status(201).json(post);
