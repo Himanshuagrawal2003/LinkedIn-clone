@@ -102,7 +102,7 @@ npm start
 ### Run Frontend
 ```bash
 cd frontend
-npm run dev
+npm run start
 ```
 
 Visit 👉 **http://localhost:5173**
