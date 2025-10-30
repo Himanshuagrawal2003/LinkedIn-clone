@@ -96,13 +96,13 @@ JWT_SECRET=your_jwt_secret_key
 ### Run Backend
 ```bash
 cd backend
-npm start
+npm run dev
 ```
 
 ### Run Frontend
 ```bash
 cd frontend
-npm run start
+npm run dev
 ```
 
 Visit 👉 **http://localhost:5173**
