@@ -27,7 +27,7 @@ export default function CreatePost({ onPost }) {
       <div className="flex items-start gap-3">
         {/* User Avatar */}
         <img
-          src={user?.avatar || defaultAvatar}
+          src={defaultAvatar}
           alt="avatar"
           className="w-12 h-12 rounded-full object-cover"
         />
