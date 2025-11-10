@@ -140,8 +140,8 @@ Visit 👉 **http://localhost:5173**
 
 You can deploy this project easily:
 
-- **Frontend:** Vercel / Netlify  
-- **Backend:** Render / Railway / Cyclic  
+- **Frontend:** Vercel
+- **Backend:** Render 
 - **Database:** MongoDB Atlas  
 
 ---
