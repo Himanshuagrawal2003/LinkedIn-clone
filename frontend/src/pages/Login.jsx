@@ -99,7 +99,7 @@ export default function Login() {
           <p className="text-center text-sm mt-6 text-gray-600">
             New to LinkedIn?{" "}
             <a
-              href="/Signup.jsx"
+              href="/signup"
               className="text-[#0A66C2] font-medium hover:underline"
             >
               Join now
